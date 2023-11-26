@@ -1,0 +1,28 @@
+{
+  "extends": "@tsconfig/node18/tsconfig.json",
+  "include": [
+    "vite.config.*",
+    "vitest.config.*",
+    "cypress.config.*",
+    "nightwatch.conf.*",
+    "playwright.config.*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext", // Change to lowercase "esnext"
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "target": "esnext",
+    "types": ["node"],
+    "allowJs": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noEmit": true,
+    "importHelpers": true,
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  }
+}
